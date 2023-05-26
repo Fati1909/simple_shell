@@ -48,7 +48,7 @@ typedef struct liststr
 
 /**
  * struct passinfo - contains pseudoarguments to pass in a function,
- * 	allowing a uniform prototype for the structure of function pointers
+ * allowing a uniform prototype for the structure of function pointers
  *@argm: A string generated from getline with arguments
  *@argv: an array of chains created from argm
  *@path: one string path to the current command
@@ -83,6 +83,7 @@ typedef struct passinfo
 	list_t *env;
 	list_t *alias;
 	list_t *history;
+
 	unsigned int line _count;
 	int err_num;
 
