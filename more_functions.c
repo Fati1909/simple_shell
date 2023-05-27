@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * interactive - function that takes a pointer to a variable
- * @info: parameter
+ * interactive - returns true if shell is interactive mode
+ * @info: struct address
  *
- * Return: an integer value
+ * Return: 1 if interactive mode, 0 otherwise
  */
 int interactive(info_t *info)
 {
@@ -27,8 +27,8 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha - check whether the given integer
- *@c: character
+ *_isalpha - checks for alphabetic character
+ *@c: character to input
  *Return: 1 if c is alphabetic, 0 otherwise
  */
 
