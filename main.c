@@ -29,7 +29,7 @@ int main(int ac, char **av)
 				show_str(av[0]);
 				show_str(": 0: Can't open ");
 				show_str(av[1]);
-				write_str('\n');
+				write_history('\n');
 				write_str(BUF_FLUSH);
 				exit(127);
 			}
@@ -38,7 +38,7 @@ int main(int ac, char **av)
 		info->readfd = fd;
 	}
 	pop_env_list(info);
-	read_history_file(info);
+	get_history_file(info);
 	hsh(info, av);
 	return (EXIT_SUCCESS);
 }
